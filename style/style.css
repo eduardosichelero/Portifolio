@@ -1,0 +1,354 @@
+/* ----------------GERAL CONFIGS------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+:root {
+  --CorFundo: #030308;
+  --AzulEscuro: #012340;
+  --AzulRoyal: #03588c;
+  --AzuLFRA01: #3dadd9;
+  --AzuLFRA01: #acd7f2;
+
+  --CorGeralBRA: #fff;
+  --CorGeralPRE: #000;
+
+  --FonteTexto: "Poppins", sans-serif;
+  --FonteAlternativa: "Open Sans", sans-serif;
+  --FonteAlternativa02: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--AzuLFRA01);
+  border: 5px solid var(--CorGeralBRA);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100px;
+  background-color: var(--CorFundo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--CorGeralBRA);
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+body {
+  background-color: var(--CorFundo);
+  color: var(--CorGeralBRA);
+}
+/* ----------------GERAL CONFIGS END-------------- */
+
+/* ----------------ANIMAÇÕES CONFIGS ----------------- */
+
+.digitando::after  {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 0.9s infinite  ;
+  }
+  
+  
+  @keyframes inicializar {
+    from{
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes pisca {
+    from{
+      opacity: 1;
+  
+    }
+  
+    to {
+      opacity: 0;
+  
+    }
+  }
+  
+  @keyframes showRight {
+    100% {
+      width: 0;
+    }
+  }
+
+/* ----------------ANIMAÇÕES CONFIGS END-------------- */
+
+/* ----------------HEAD CONFIGS ----------------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 89%;
+  padding: 20px 10%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.header.rolagem-head {
+  background-color: var(--AzulRoyal);
+  padding: 10px 10%;
+}
+
+.header.rolagem-head a {
+  color: var(--CorGeralBRA);
+}
+
+.header.rolagem-head .ativo {
+  color: var(--AzulRoyal);
+}
+
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: var(--AzuLFRA01);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--CorFundo);
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: var(--AzuLFRA01);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+  color: var(--CorGeralBRA);
+}
+.navbar a.ativo:hover {
+  color: var(--AzulRoyal);
+}
+
+.navbar ul li a::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  position: absolute;
+  height: 3px;
+
+  transition: 0.3s;
+}
+
+/* ----------------HEAD CONFIGS END-------------- */
+
+/* ----------------HOME CONFIGS ----------------- */
+
+#home {
+  padding-top: 4vh;
+  height: 99.9vh;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.home,
+container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.home-conteudos {
+  max-width: 600px;
+}
+
+.home-conteudos h1 {
+  position: relative;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/*
+.home-conteudos h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #10454f;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+*/
+.home-conteudos h3 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--AzulRoyal);
+}
+
+.home-conteudos h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--CorFundo);
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.3s;
+}
+
+.home-conteudos p {
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 40px;
+  color: var(--AzuLFRA01);
+}
+
+.home-conteudos p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--CorFundo);
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
+.home-conteudos .btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+
+.home-conteudos .btn-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--CorFundo);
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+  z-index: 2;
+}
+
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background-color: var(--AzulRoyal);
+  border: px solid var(--AzulRoyal);
+  border-radius: 8px;
+  font-size: 19px;
+  color: var(--CorGeralBRA);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn-box a:hover {
+    color: var(--AzuLFRA01);
+}
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: var(--AzulRoyal);
+}
+
+.btn-box a:nth-child(2):hover {
+  color: var(--CorGeralBRA);
+}
+
+.btn-box a:nth-child(2)::before {
+  background: var(--AzulRoyal);
+}
+
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--CorFundo);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+}
+
+.home-sci {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+.home-sci:hover {
+  background-color: transparent;
+}
+
+/* ----------------HOME CONFIGS END-------------- */
