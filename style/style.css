@@ -153,7 +153,7 @@ body {
   height: 100%;
   background: var(--CorFundo);
   animation: showRight 1s ease forwards;
-  animation-delay: 0.4s;
+  animation-delay: 2.3s;
 }
 
 .navbar a {
@@ -242,7 +242,7 @@ container {
   height: 100%;
   background: var(--CorFundo);
   animation: showRight 1s ease forwards;
-  animation-delay: 1.3s;
+  animation-delay: 2.4s;
 }
 
 .home-conteudos p {
@@ -261,7 +261,7 @@ container {
   height: 100%;
   background: var(--CorFundo);
   animation: showRight 1s ease forwards;
-  animation-delay: 1.6s;
+  animation-delay: 2.6s;
 }
 
 .home-conteudos .btn-box {
@@ -281,7 +281,7 @@ container {
   height: 100%;
   background: var(--CorFundo);
   animation: showRight 1s ease forwards;
-  animation-delay: 1.9s;
+  animation-delay: 2.9s;
   z-index: 2;
 }
 
@@ -337,7 +337,7 @@ container {
   width: 100%;
 }
 
-.home-sci {
+.home-emci {
   position: absolute;
   top: 0;
   right: 30px;
@@ -347,7 +347,7 @@ container {
   transition: 3s;
 }
 
-.home-sci:hover {
+.home-emci:hover {
   background-color: transparent;
 }
 
