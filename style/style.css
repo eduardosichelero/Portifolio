@@ -29,14 +29,14 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  background-color: var(--AzuLFRA01);
-  border: 5px solid var(--CorGeralBRA);
+  width: 1px;
+  background-color: var(--CorFundo);
+  border: 1px solid var(--CorFundo);
 }
 
 ::-webkit-scrollbar-thumb {
-  width: 100px;
-  background-color: var(--CorFundo);
+  width: 1px;
+  background-color: var(--AzuLFRA01);
 }
 
 html {
@@ -67,43 +67,40 @@ body {
 
 /* ----------------ANIMAÇÕES CONFIGS ----------------- */
 
-.digitando::after  {
-    content: '|';
-    margin-left: 5px;
+.digitando::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.9s infinite;
+}
+
+@keyframes inicializar {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
     opacity: 1;
-    animation: pisca 0.9s infinite  ;
+    transform: translate3d(0, 0, 0);
   }
-  
-  
-  @keyframes inicializar {
-    from{
-      opacity: 0;
-      transform: translate3d(0, -60px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+}
+
+@keyframes pisca {
+  from {
+    opacity: 1;
   }
-  
-  @keyframes pisca {
-    from{
-      opacity: 1;
-  
-    }
-  
-    to {
-      opacity: 0;
-  
-    }
+
+  to {
+    opacity: 0;
   }
-  
-  @keyframes showRight {
-    100% {
-      width: 0;
-    }
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
   }
+}
 
 /* ----------------ANIMAÇÕES CONFIGS END-------------- */
 
@@ -306,7 +303,7 @@ container {
 }
 
 .btn-box a:hover {
-    color: var(--AzuLFRA01);
+  color: var(--AzuLFRA01);
 }
 .btn-box a:nth-child(2) {
   background: transparent;
@@ -352,3 +349,249 @@ container {
 }
 
 /* ----------------HOME CONFIGS END-------------- */
+
+/* ----------------SOBRE CONFIGS ----------------- */
+
+.section-container {
+  display: flex;
+}
+
+.section-foto-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  box-shadow: 0 5px 15px #ffffff34;
+  border-radius:  30px;
+  
+}
+
+.section-texto-p1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.titulo {
+  position: relative;
+  font-size: 3rem;
+  text-align: center;
+  background: transparent;
+}
+
+.titulo h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--CorFundo);
+  animation: showRight 1s ease forwards;
+  animation-delay: 2.9s;
+}
+
+.icone {
+  cursor: pointer;
+  height: 2rem;
+}
+
+#sobre {
+  position: relative;
+  background-color: transparent;
+}
+
+.sobre-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.sobre-detalhes-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sobre-containers,
+.sobre-detalhes-container {
+  display: flex;
+}
+
+.sobre-detalhes-container h3 {
+    color: var(--AzulEscuro);
+}
+#sobre-pic {
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px var(--CorGeralPRE);
+  display: flex;
+  gap: 30px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#sobre-pic:hover {
+  background-color: var(--AzulRoyal);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.detalhes-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: var(--CorGeralBRA);
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  color: var(--CorGeralPRE);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.detalhes-container:hover {
+  background-color: var(--AzuLFRA01);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.detalhes-container p {
+  color: var(--CorGeralPRE);
+}
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+/* ----------------SOBRE CONFIGS END-------------- */
+
+/* ----------------PROJETOS CONFIGS ----------------- */
+
+.Feature-Title {
+  font-size: 3rem;
+  text-align: center;
+  background: var(--CorFundo);
+  margin: auto;
+}
+
+#projects-cont {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+#projects-cont .feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+
+#projects-cont .feature-cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+  margin-top: 40px;
+}
+
+#projects-cont .feature-cards .card .info i {
+  color: #fff;
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+#projects-cont .feature-cards .card .info h2 {
+  text-align: center;
+}
+
+#projects-cont .feature-cards .card .info p {
+  font-size: 1.1rem;
+}
+
+#projects-cont {
+  background-color: var(--CorFundo);
+  padding: 10px;
+}
+
+#projects-cont .projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#projects-cont .projects h2 {
+  text-align: center;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  margin-top: 40px;
+  padding-top: 15px;
+}
+
+#projects-cont .projects a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#projects-cont .projects a:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#projects-cont .card {
+  padding: 30px;
+  background-color: var(--CorGeralBRA);
+  box-shadow: 0 5px 15px #ffffff46;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#projects-cont .card:hover {
+  border-color: var(--AzulRoyal);
+  box-shadow: none;
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#projects-cont .card .info h2 {
+  margin: auto;
+  margin-bottom: 20px;
+  color: var(--CorGeralPRE);
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+#projects-cont .card .info p {
+  color: var(--CorGeralPRE);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+/* ----------------PROJETOS CONFIGS END-------------- */
