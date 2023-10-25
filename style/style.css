@@ -362,8 +362,7 @@ container {
   width: 400px;
   margin: auto 0;
   box-shadow: 0 5px 15px #ffffff34;
-  border-radius:  30px;
-  
+  border-radius: 30px;
 }
 
 .section-texto-p1 {
@@ -417,7 +416,7 @@ container {
 }
 
 .sobre-detalhes-container h3 {
-    color: var(--AzulEscuro);
+  color: var(--AzulEscuro);
 }
 #sobre-pic {
   border-radius: 2rem;
@@ -467,14 +466,14 @@ container {
 
 /* ----------------PROJETOS CONFIGS ----------------- */
 
-.Feature-Title {
+.titulo-recurso {
   font-size: 3rem;
   text-align: center;
   background: var(--CorFundo);
   margin: auto;
 }
 
-#projects-cont {
+#projetos-cont {
   width: 100%;
   height: auto;
   margin: 0;
@@ -484,7 +483,7 @@ container {
   margin-bottom: 100px;
 }
 
-#projects-cont .feature-cards {
+#projetos-cont .recurso-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -493,7 +492,7 @@ container {
   margin-top: 40px;
 }
 
-#projects-cont .feature-cards .card {
+#projetos-cont .recurso-card .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -502,7 +501,7 @@ container {
   margin-top: 40px;
 }
 
-#projects-cont .feature-cards .card .info i {
+#projetos-cont .recurso-card .card .info i {
   color: #fff;
   font-size: 8rem;
   width: 100%;
@@ -510,27 +509,27 @@ container {
   margin-bottom: 1.4rem;
 }
 
-#projects-cont .feature-cards .card .info h2 {
+#projetos-cont .recurso-card .card .info h2 {
   text-align: center;
 }
 
-#projects-cont .feature-cards .card .info p {
+#projetos-cont .recurso-card .card .info p {
   font-size: 1.1rem;
 }
 
-#projects-cont {
+#projetos-cont {
   background-color: var(--CorFundo);
   padding: 10px;
 }
 
-#projects-cont .projects {
+#projetos-cont .projetos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
 
-#projects-cont .projects h2 {
+#projetos-cont .projetos h2 {
   text-align: center;
   color: #f7f7f7;
   text-transform: uppercase;
@@ -538,7 +537,7 @@ container {
   padding-top: 15px;
 }
 
-#projects-cont .projects a {
+#projetos-cont .projetos a {
   text-decoration: none;
   font-size: 1.3em;
   color: #fff;
@@ -549,12 +548,12 @@ container {
   transition: all 0.3s ease;
 }
 
-#projects-cont .projects a:hover {
+#projetos-cont .projetos a:hover {
   border-color: #fff;
   box-shadow: none;
 }
 
-#projects-cont .card {
+#projetos-cont .card {
   padding: 30px;
   background-color: var(--CorGeralBRA);
   box-shadow: 0 5px 15px #ffffff46;
@@ -565,7 +564,7 @@ container {
   transition: all 0.3s ease;
 }
 
-#projects-cont .card:hover {
+#projetos-cont .card:hover {
   border-color: var(--AzulRoyal);
   box-shadow: none;
   cursor: pointer;
@@ -579,7 +578,7 @@ container {
   justify-content: center;
 }
 
-#projects-cont .card .info h2 {
+#projetos-cont .card .info h2 {
   margin: auto;
   margin-bottom: 20px;
   color: var(--CorGeralPRE);
@@ -588,10 +587,86 @@ container {
   font-family: "Ubuntu";
 }
 
-#projects-cont .card .info p {
+#projetos-cont .card .info p {
   color: var(--CorGeralPRE);
   font-size: 1.1rem;
   line-height: 1.8rem;
 }
 
 /* ----------------PROJETOS CONFIGS END-------------- */
+
+/* ----------------HABILIDADES CONFIGS--------------- */
+.skills {
+  width: 150%;
+  height: 150%;
+}
+.shabi-cont {
+  width: 150%;
+  height: 150%;
+}
+
+.habi-cont h2 {
+  margin-top: 45px;
+  font-size: 3rem;
+  text-align: center;
+  background: transparent;
+  margin-bottom: 100px;
+}
+
+.implementacao {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 150px;
+}
+
+.implementacao .card {
+  background-color: var(--CorGeralBRA);
+  padding: 1rem;
+  border: 4px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.implementacao .card:hover {
+  background-color: #c5e9f8;
+  border-color: var(--AzulEscuro);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.implementacao .card span {
+  display: inline-block;
+  background-color: var(--CorGeralBRA);
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--CorGeralPRE);
+  border-radius: 5px;
+}
+
+.implementacao .card h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--CorGeralPRE);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.implementacao .card p {
+  text-align: center;
+  color: var(--CorGeralPRE);
+  margin-bottom: 1rem;
+}
+
+.implementacao .card a {
+  color: var(--CorGeralPRE);
+  transition: all 0.3s ease;
+}
+
+.implementacao .card a:hover {
+  color: var(--AzulEscuro);
+}
+
+/* ----------------HABILIDADES CONFIGS END----------- */
