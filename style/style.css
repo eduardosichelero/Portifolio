@@ -102,6 +102,42 @@ body {
   }
 }
 
+@media screen and (max-width: 1030px) {
+  /*header*/
+
+  .navbar {
+    display: none;
+  }
+
+  .home {
+    font-size: 10px;
+  }
+
+  .logo {
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+  }
+
+  #skills {
+    flex-direction: column;
+  }
+
+  html {
+    flex-direction: column;
+  }
+
+  .container-habli {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* ----------------ANIMAÇÕES CONFIGS END-------------- */
 
 /* ----------------HEAD CONFIGS ----------------- */
@@ -123,6 +159,7 @@ body {
 .header.rolagem-head {
   background-color: var(--CorFundo);
   padding: 10px 10%;
+  transition: 0.5s;
 }
 
 .header.rolagem-head a {
@@ -139,6 +176,16 @@ body {
   color: var(--AzuLFRA01);
   text-decoration: none;
   font-weight: 600;
+}
+
+.rolagem-head .logo-cont .logo {
+  color: transparent;
+  background-image: url("../assets/favicon02.ico");
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  padding: 3px;
+  margin-left: 75px;
+  animation: showRight 0.8s ease reverse;
 }
 
 .logo::before {
@@ -597,78 +644,136 @@ container {
 /* ----------------PROJETOS CONFIGS END-------------- */
 
 /* ----------------HABILIDADES CONFIGS--------------- */
-.skills {
-  width: 150%;
-  height: 150%;
-}
-.shabi-cont {
-  width: 150%;
-  height: 150%;
-}
-
-.habi-cont h2 {
-  margin-top: 45px;
+.titulo-habilidade {
   font-size: 3rem;
   text-align: center;
-  background: transparent;
+  background: var(--CorFundo);
+  margin: auto;
+}
+
+#habilidades-cont {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
   margin-bottom: 100px;
+
+  
 }
 
-.implementacao {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 150px;
+#habilidades-cont .habilidade-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-right: 10px;
+  height: auto;
 }
 
-.implementacao .card {
-  background-color: var(--CorGeralBRA);
-  padding: 1rem;
-  border: 4px solid transparent;
-  border-radius: 15px;
+#habilidades-cont .habilidade-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
+  margin-top: 40px;
+}
+
+#habilidades-cont .habilidade-card .card .info i {
+  color: #fff;
+  font-size: 8rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+#habilidades-cont .habilidade-card .card .info h2 {
+  text-align: center;
+}
+
+#habilidades-cont .habilidade-card .card .info p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: auto 0;
+}
+
+#habilidades-cont {
+  background-color: var(--CorFundo);
+  padding: 115px;
+}
+
+#habilidades-cont .habilidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#habilidades-cont .habilidade h2 {
+  text-align: center;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  margin-top: 40px;
+  padding-top: 15px;
+}
+
+#habilidades-cont .habilidade a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
   transition: all 0.3s ease;
-  z-index: 1;
 }
 
-.implementacao .card:hover {
-  background-color: #c5e9f8;
-  border-color: var(--AzulEscuro);
+#habilidades-cont .habilidade a:hover {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+#habilidades-cont .card {
+  padding: 30px;
+  background-color: var(--CorGeralBRA);
+  box-shadow: 0 5px 15px #ffffff46;
+  border-radius: 20px;
+  display: flex;
+  gap: 30px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#habilidades-cont .card:hover {
+  border-color: var(--AzulRoyal);
+  box-shadow: none;
   cursor: pointer;
   scale: 1.05;
 }
 
-.implementacao .card span {
-  display: inline-block;
-  background-color: var(--CorGeralBRA);
-  padding: 2px 9px;
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  color: var(--CorGeralPRE);
-  border-radius: 5px;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
 }
 
-.implementacao .card h4 {
-  text-align: center;
-  margin-bottom: 0.5rem;
+#habilidades-cont .card .info h2 {
+  margin: auto;
+  margin-bottom: 20px;
   color: var(--CorGeralPRE);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
 }
 
-.implementacao .card p {
-  text-align: center;
+#habilidades-cont .card .info p {
   color: var(--CorGeralPRE);
-  margin-bottom: 1rem;
-}
-
-.implementacao .card a {
-  color: var(--CorGeralPRE);
-  transition: all 0.3s ease;
-}
-
-.implementacao .card a:hover {
-  color: var(--AzulEscuro);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 }
 
 /* ----------------HABILIDADES CONFIGS END----------- */
@@ -684,7 +789,7 @@ container {
 .blur {
   background-color: transparent;
   position: absolute;
-  box-shadow: 0 0 1000px 50px var(--AzulEscuro);
+  box-shadow: 0 0 1000px 50px #01234084;
   z-index: -100;
 }
 .blur-grande {
@@ -705,7 +810,6 @@ container {
   box-shadow: 0 0 2000px 100px #01234084;
   z-index: -100;
 }
-
 
 footer {
   position: relative;
