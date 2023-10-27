@@ -699,6 +699,12 @@ container {
   box-shadow: 0 0 2000px 200px #01234084;
   z-index: -100;
 }
+.blur-grande3 {
+  background-color: transparent;
+  position: absolute;
+  box-shadow: 0 0 2000px 100px #01234084;
+  z-index: -100;
+}
 
 
 footer {
