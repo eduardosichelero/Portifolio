@@ -21,6 +21,7 @@ window.addEventListener("scroll", function(){
 })
 
 
+
 const hamburguer = document.querySelector("hamburguer");
 const nav = document.querySelector(".navbar");
 
