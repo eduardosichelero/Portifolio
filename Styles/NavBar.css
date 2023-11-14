@@ -1,0 +1,172 @@
+/*-----------------------------------------------Configurações NavBar---------------------------------------------------------------- */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+.nav-detais,
+ul,
+li,
+a {
+  background-color: transparent;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  position: fixed;
+  width: 1550px;
+  z-index: 1111111111111;
+  width: 100%;
+}
+
+nav.rolagem-barra {
+  background-color: var(--bg-full-color);
+  padding: 21px 2px;
+  width: 100%;
+  height: 5px;
+  transition: all 1s ease 0.5ms;
+  border-radius: 0 2%;
+}
+
+nav.rolagem-barra a {
+  color: var(--CorVar3);
+  background: transparent;
+}
+
+.rolagem-barra a:hover {
+  color: var(--primary-bg-color);
+  background: transparent;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.3rem;
+  margin-right: 30px;
+}
+
+a {
+  color: var(--thirdly-bg-color);
+  text-decoration: none;
+  text-decoration-color: white;
+  background: transparent;
+}
+
+a:hover {
+  color: var(--CorVar1);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: var(--secondary-bg-color);
+  background: transparent;
+}
+
+.logo {
+  font-size: 1.5rem;
+  padding-left: 75px;
+  background: transparent;
+  color: var(--CorVar1);
+}
+
+.rolagem-barra.logo p:hover {
+  opacity: 0;
+}
+
+.logo:hover {
+  cursor: default;
+  color: var(--primary-bg-color);
+}
+
+/*------------------------------------------------Configurações Hamburguer------------------------------------------------------------ */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  margin: 3%;
+}
+
+.hamburger-icone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  margin: 9px 1%;
+}
+
+.hamburger-icone span {
+  width: 100%;
+  height: 2px;
+
+  background-color: white;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(181, 23, 23);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5 ease-in-out;
+  border-radius: 10px;
+}
+
+.menu-links a {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 26px;
+  color: white;
+  background-color: var(--secondary-bg-color);
+  text-decoration: none;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+}
+
+.menu-links li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.menu-links.open {
+  min-height: 400px;
+  min-width: 250px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}

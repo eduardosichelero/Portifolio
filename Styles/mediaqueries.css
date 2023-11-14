@@ -1,0 +1,224 @@
+@media screen and (max-width: 1400px) {
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #Projects {
+    height: fit-content;
+  }
+  .home-conteudos .btn-box-header {
+    text-decoration: none;
+  }
+  nav {
+    width: 1382px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-conteudos .btn-box-header {
+    text-decoration: none;
+  }
+  #home {
+    padding: 10px;
+  }
+  .home-conteudos {
+    max-width: 1000px;
+    padding-bottom: 10px;
+    margin: 5%;
+  }
+  nav {
+    width: 98%;
+    height: 7%;
+  }
+  .logo {
+    height: 50%;
+  }
+  .container-footer {
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 21px;
+  }
+
+  #About {
+    background-image: none;
+  }
+
+  #Projects {
+    margin-top: 0;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    height: 7vh;
+    width: 100%;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  #Skills {
+    padding-top: 130%;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+  footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-footer {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .home-conteudos .btn-box-header {
+    text-decoration: none;
+  }
+  .home-conteudos h3 {
+    font-size: 24px;
+  }
+  .rolagem-barra-hamb .logo {
+    color: transparent;
+    background: url("./assets/favicon-32x32.png");
+    background-repeat: no-repeat;
+    padding-top: 1px;
+    transition: all 1s ease 0.5ms;
+    margin: 0 19%;
+  }
+  #About {
+    margin: -2%;
+    margin-bottom: 100%;
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
+    background-image: none;
+  }
+  #About img {
+    background-image: none;
+  }
+  #Skills {
+    padding-top: 82%;
+  }
+  footer .column p {
+    width: 250px;
+  }
+  footer .column .socials {
+    justify-content: center;
+    align-items: center;
+    scale: 1.3;
+  }
+  footer .lad a {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  footer .lad h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .logo-footer {
+    display: none;
+  }
+  #Projects {
+    margin-top: 0;
+  }
+  #home {
+    padding: 5%;
+  }
+  .home-conteudos {
+    padding: 0%;
+  }
+  #home p {
+    text-align: left;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 90vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  footer {
+    display: flex;
+  }
+  .copyright {
+    display: none;
+  }
+  .container-footer {
+    gap: 20px;
+    padding-top: 150px;
+  }
+  .column {
+    text-align: center;
+    justify-content: center;
+  }
+  .footer .column h4 {
+    text-align: center;
+  }
+}
