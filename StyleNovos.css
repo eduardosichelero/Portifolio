@@ -34,12 +34,13 @@
 
 .light-mode {
 	--bg-full-color: #ffffff;
-	--fourthly-bg-color: yellowgreen;
-	--secondary-bg-color: #3c0f06;
-	--thirdly-bg-color: #1263dc(50, 205, 86);
-	--fourthly-bg-color: #352473;
+	--fourthly-bg-color: #E36FD5;
+	--primary-bg-color: #8F49F2;
+	--secondary-bg-color: #C56FE3;
+	--thirdly-bg-color: #E36FD5(50, 205, 86);
+	--fourthly-bg-color: ##E36FD5;
 	--fifthly-bg-color: #2B1E59;
-	--CorVar1: #CD5B45;
+	--CorVar1: #4333E8;
 	--CorVar2: #223A5E;
 	--CorVar3: #122137;
 	--CorVar4: #000;
@@ -256,6 +257,7 @@ nav {
 	width: 1550px;
 	z-index: 1111111111111;
 	width: 100%;
+	top: 0;
 }
 
 nav.rolagem-barra {
@@ -552,6 +554,9 @@ container {
 	background: transparent;
 	display: flex;
 }
+.text-section p{
+	color: var(--fourthly-bg-color);
+}
 
 .black-text {
 	background: var(--CorGeralPRE);
@@ -571,7 +576,6 @@ container {
 	text-align: center;
 	background: transparent;
 	color: var(--CorVar1);
-	padding-bottom: 5%;
 
 }
 .title-skills {
@@ -579,11 +583,13 @@ container {
 	text-align: center;
 	background: transparent;
 	color: var(--CorVar1);
-	padding-bottom: 10%;
+	padding-bottom: 3%;
 
 }
 
-
+.white {
+	color: var(--CorGeralBRA);
+}
 
 #socials-container {
 	display: flex;
@@ -603,7 +609,7 @@ container {
 
 #About {
 	display: flex;
-	background-image: url("../assets/6.png");
+	background-image: url("./Assets/Wallpapers/Bg-black.png");
 	margin: 0%;
 	width: 100%;
 	height: 120vh;
@@ -613,9 +619,6 @@ container {
 
 }
 
-#About p {
-	color: var(--CorGeralBRA);
-}
 
 .text-about {
 	background-color: transparent;
@@ -627,7 +630,7 @@ container {
 
 .cont-text-01 {
 	background: transparent;
-	margin: 7%;
+	margin: 6%;
 }
 
 .about-containers {
@@ -830,7 +833,7 @@ article .icon {
 .container-footer {
 	max-width: 1200px;
 	margin: auto;
-	padding: 5rem 2rem;
+	padding: 12rem 2rem;
 	text-decoration: none;
 	gap: 10rem;
 }
@@ -922,6 +925,9 @@ footer .column>a:hover {
 
 .column .lad {
 	margin: 5%;
+}
+.lad {
+	padding-top: 67px;
 }
 
 .logo-footer img {

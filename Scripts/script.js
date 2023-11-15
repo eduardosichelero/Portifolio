@@ -29,13 +29,13 @@ var sobreSection = document.getElementById("About");
 sun.onclick = function() {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
-    sun.src = "./Icones/icon/moon.png";
-    sobreSection.style.backgroundImage = 'url("./assets/8.png")';
-    document.getElementById("logo-footer").innerHTML = '<img src="./assets/Logos/Logoblack.png" />';
+    sun.src = "./Assets/Icones/moon.png";
+    sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-white.png")';
+    document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-Black.png" />';
   } else {
-    sun.src = "./Icones/icon/sun.png";
-    sobreSection.style.backgroundImage = 'url("./assets/6.png")';
-    document.getElementById("logo-footer").innerHTML = '<img src="./assets/Logos/LogoSemFundo.png" />';
+    sun.src = "./Assets/Icones/sun.png";
+    sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-black.png")';
+    document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-White.png" />';
   }
 }
 

@@ -64,7 +64,7 @@
     display: block;
   }
   #Skills {
-    padding-top: 130%;
+    padding-top: 18%;
   }
   section,
   .section-container {
@@ -86,6 +86,10 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 8%;
+  }
+  .title {
+    padding-bottom: 5%;
+  
   }
 }
 
@@ -120,8 +124,8 @@
     background-image: none;
   }
   #Skills {
-    padding-top: 82%;
-  }
+    padding-top: 100%;
+}
   footer .column p {
     width: 250px;
   }
