@@ -31,7 +31,7 @@ sun.onclick = function() {
     sun.src = "./Assets/Icones/moon.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-white.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-Black.png" />';
-    aboutPic.src = "./Assets/Images/Me-Light.png"; // Troque para o caminho da imagem de light mode
+    aboutPic.src = "./Assets/Images/Me-Blue.png"; // Troque para o caminho da imagem de light mode
   } else {
     sun.src = "./Assets/Icones/sun.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-black.png")';
