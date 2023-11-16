@@ -21,10 +21,9 @@ function ativaLetra(elemento) {
 const titulo = document.querySelector('.digitando')
 ativaLetra(titulo);
 
-
-//Light-mode
 var sun = document.getElementById("sun");
 var sobreSection = document.getElementById("About");
+var aboutPic = document.querySelector(".about-pic");
 
 sun.onclick = function() {
   document.body.classList.toggle("light-mode");
@@ -32,12 +31,15 @@ sun.onclick = function() {
     sun.src = "./Assets/Icones/moon.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-white.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-Black.png" />';
+    aboutPic.src = "./Assets/Images/Me-Light.png"; // Troque para o caminho da imagem de light mode
   } else {
     sun.src = "./Assets/Icones/sun.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-black.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-White.png" />';
+    aboutPic.src = "./Assets/Images/Me-Purple.png"; // Troque para o caminho da imagem de dark mode
   }
 }
+
 
 
 //Rolagem barra
