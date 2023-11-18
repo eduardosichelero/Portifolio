@@ -29,7 +29,7 @@ sun.onclick = function() {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
     sun.src = "./Assets/Icones/moon.png";
-    sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-white.png")';
+    sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-White.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-Black.png" />';
     aboutPic.src = "./Assets/Images/Me-Light.png"; // Troque para o caminho da imagem de light mode
   } else {
