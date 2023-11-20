@@ -25,22 +25,21 @@ var sun = document.getElementById("sun");
 var sobreSection = document.getElementById("About");
 var aboutPic = document.querySelector(".about-pic");
 
+//Modo light
 sun.onclick = function() {
   document.body.classList.toggle("light-mode");
   if (document.body.classList.contains("light-mode")) {
     sun.src = "./Assets/Icones/moon.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-White.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-Black.png" />';
-    aboutPic.src = "./Assets/Images/Me-Blue.png"; // Troque para o caminho da imagem de light mode
+    aboutPic.src = "./Assets/Images/Me-Blue.png"; 
   } else {
     sun.src = "./Assets/Icones/sun.png";
     sobreSection.style.backgroundImage = 'url("./Assets/Wallpapers/Bg-black.png")';
     document.getElementById("logo-footer").innerHTML = '<img src="./Assets/Logos/Logo-White.png" />';
-    aboutPic.src = "./Assets/Images/Me-Purple.png"; // Troque para o caminho da imagem de dark mode
+    aboutPic.src = "./Assets/Images/Me-Purple.png";
   }
 }
-
-
 
 //Rolagem barra
 window.addEventListener("scroll", function() {
@@ -55,7 +54,6 @@ window.addEventListener("scroll", function() {
     logo.textContent = "Eduardo Sichelero";
   }
 });
-
 
 //Black elements
 var elements = document.querySelectorAll(".details-cont-black, .article-container-skills,article, black-text, .icon-black");
