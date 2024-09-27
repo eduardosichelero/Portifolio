@@ -11,7 +11,7 @@
 
 :root {
 
-	--bg-full-color: #030308;
+	--bg-full-color: #09090b;
 	--primary-bg-color: #8F49F2;
 	--secondary-bg-color: #763DF2;
 	--thirdly-bg-color: #592db8;
@@ -26,7 +26,7 @@
 	--CorVar6: #555555;
 
 	--CorGeralBRA: #fff;
-	--CorGeralPRE: #000;
+	--CorGeralPRE: #09090b;
 
 	--FonteTexto: "Poppins", sans-serif;
 	--FonteAlternativa: "Open Sans", sans-serif;
@@ -44,12 +44,12 @@
 	--CorVar1: #4333E8;
 	--CorVar2: #C56FE3;
 	--CorVar3: #122137;
-	--CorVar4: #000;
-	--CorVar5: #000;
+	--CorVar4: #09090b;
+	--CorVar5: #09090b;
 	--CorVar6: #555555;
 
 	--CorGeralBRA: #fff;
-	--CorGeralPRE: #000;
+	--CorGeralPRE: #09090b;
 }
 
 li img {
